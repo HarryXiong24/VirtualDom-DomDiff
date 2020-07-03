@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script src="./element.js"></script>
+<script>
+
+// 创建一个createElement实例对象
+let el = createElement
+let app = el(
+  'div',
+  {id:'virtual-dom'},
+  [
+    el('p',{},['Virtual DOM']),
+    el('ul', { id: 'list' }, [
+      el('li', { class: 'item' }, ['Item 1']),
+      el('li', { class: 'item' }, ['Item 2']),
+      el('li', { class: 'item' }, ['Item 3'])
+    ]),
+    el('div',{},['Hello World'])
+  ]
+) 
+
+console.log(app);
+let realDom = app.render();    // 虚拟dom生成真实dom
+document.body.appendChild(realDom);
+
+</script>
+</html>

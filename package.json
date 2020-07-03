@@ -1,0 +1,20 @@
+{
+  "name": "VirtualDom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "XHW",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "list-diff2": "^0.1.4",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
